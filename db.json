@@ -1,0 +1,57 @@
+{
+  "package": [
+    {
+      "id": 1,
+      "place": "Kamembe exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    },
+    {
+      "id": 2,
+      "place": "San Fransisco exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    },
+    {
+      "id": 3,
+      "place": "Abu dahbi exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    },
+    {
+      "id": 4,
+      "place": "South Coast exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    },
+    {
+      "id": 5,
+      "place": "Sheraton exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    },
+    {
+      "id": 6,
+      "place": "Paradiscus exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " From $1,199 total per person"
+    }  ]
+}
