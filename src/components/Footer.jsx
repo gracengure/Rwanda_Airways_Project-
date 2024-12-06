@@ -26,6 +26,7 @@ function Footer() {
             <p>Middle East</p>
           </div>
         </div>
+
         <div className="footer-section">
           <h2 className="footer-heading">Holidays Type</h2>
           <div className="footer-links">
@@ -35,14 +36,22 @@ function Footer() {
             <p>All-inclusive guided tours</p>
           </div>
         </div>
+
         <div className="footer-section">
           <h2 className="footer-heading">Contact Us</h2>
           <div className="footer-links">
             <p><BsTelephoneFill />+250 788 177 000</p>
             <p><PiEnvelopeSimpleLight />holidays@rwandair.com</p>
-            
           </div>
         </div>
+        <div className="footer-box">
+          <p>Travel made simpler.<br/>
+          Book and manage flights on the go!</p>
+          <div className="footer-btn"><button > Download from GooglePlay</button>
+          <button > Download from GooglePlay</button>
+          </div></div>
+       
+        
       </div>
     </>
   );

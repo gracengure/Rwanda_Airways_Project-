@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Popular from "./components/Popular";
 import Holidays from "./components/Holidays";
 import Cards from "./components/Cards";
+import LandingPage from "./components/LandingPage";
 function App() {
   const [packages, setPackages] = useState([]);
   const[cards ,setCards]=useState([])
@@ -24,6 +25,7 @@ function App() {
   }, []);
   return (
     <>
+    <LandingPage/>
     <Holidays cards={cards}/>
       <Popular  packages={packages}/>
       <Cards/>
