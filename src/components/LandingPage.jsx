@@ -1,62 +1,72 @@
 import React from "react";
-
+import logo from "../assets/Screenshot from 2024-12-07 16-19-14.png"
 function LandingPage() {
   return (
     <div className="landing-page">
       {/* Navbar */}
       <div className="navbar">
-      <div style={{ position: 'absolute', left: 50, top: '20px' }}>
-        <img
-          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw4BmUSrJFhYwmSzE9hyehKFekY1ZEsVYSVtIapWgPASwsmF4R"
-          alt="Rwanda Flag"
-          className="logo"
-          style={{ width: '50px', height: 'auto', marginRight: '10px' }}  // Resize logo as needed
-        />
-        <div style={{ position: 'relative', display: 'inline-block' }}>
-          <p
-            style={{
-              color: '#005DAB',
-              fontSize: '24px',
-              display: 'inline-block',
-              paddingRight: '10px',
-              margin: '0',
-              fontWeight: 'bold',
-            }}
-          >
-            RwandaAir
-          </p>
-          <span
-            style={{
-              position: 'absolute',
-              top: '0',
-              left: '100%', // Position the line immediately to the right of the text
-              height: '100%',
-              borderLeft: '2px solid #005DAB',
-            }}
-          ></span>
-          <div
-            style={{
-              color: '#005DAB',
-              fontSize: '12px',
-              width: '100%',
-              paddingLeft: '10px',
-            }}
-          >
-            fly the dream of Africa
-          </div>
+      <div style={{ position: 'absolute', left: 50, top: '20px', display: 'flex', alignItems: 'center' }}>
+    {/* Logo */}
+    <img
+      src={logo}
+      alt="Rwanda Flag"
+      className="logo"
+      style={{ width: '50px', height: 'auto', marginRight: '10px' }} // Resize logo as needed
+    />
+    
+    {/* Text Container */}
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      {/* Rwanda Air */}
+      <div style={{ position: 'relative', display: 'inline-block' }}>
+        <i
+          style={{
+            color: '#005DAB',
+            fontSize: '35px',
+            display: 'inline-block',
+            margin: '0',
+            fontWeight: 'bold',
+          }}
+        >
+          RwandAir
+        </i>
+        
+        <div
+          style={{
+            color: '#005DAB',
+            fontSize: '12px',
+            paddingLeft: '35px',
+          }}
+        >
+          Fly the dream of Africa
         </div>
+      </div>
+      
+      {/* Vertical Line & HOLIDAYS */}
+      <div style={{ display: 'flex', alignItems: 'center', }}>
+        {/* Vertical Line */}
+        <div
+          style={{
+            borderLeft: '2px solid #005DAB',
+            height: '50px', // Adjust height as needed
+            marginRight: '10px',
+          }}
+        ></div>
+        {/* HOLIDAYS */}
         <p
           style={{
             color: '#606060',
-            fontSize: '24px',
+            fontSize: '35px',
             fontWeight: 'bolder',
-            paddingLeft: '10px', // Add padding to align better
-            display:'inline-block'
+            textAlign: 'center',
+            margin: '0',
+            fontFamily:"sans-serif"
           }}
         >
           HOLIDAYS
         </p>
       </div>
+    </div>
+  </div>
         <div className="nav-links">
           <a href="#home">Destinations</a>
           <a href="#about">Explore Rwanda</a>
