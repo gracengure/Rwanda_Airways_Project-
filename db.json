@@ -1,0 +1,87 @@
+{
+  "package": [
+    {
+      "id": 1,
+      "image": "https://i.pinimg.com/236x/5f/9c/f8/5f9cf8d0b41a8676ff89177269c1391d.jpg",
+      "place": "Kamembe exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " 1,199 "
+    },
+    {
+      "id": 2,
+      "image": "https://i.pinimg.com/736x/5b/85/ec/5b85ecc9ca843ec339353f979c2025cd.jpg",
+      "place": "San Fransisco exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+
+      "price": "  1,199 "
+    },
+    {
+      "id": 3,
+      "image": "https://images.herzindagi.info/image/2021/Nov/mangalore-things-to-do.jpg",
+      "place": "Abu dahbi exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " 1,199 "
+    },
+    {
+      "id": 4,
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/82/81/82/jaffa-n-1397x735-largejpg.jpg",
+      "place": "South Coast exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": "  1,199 "
+    },
+    {
+      "id": 5,
+      "image": "./assets/Screenshot from 2024-12-04 21-04-30.jpg",
+      "place": "Sheraton exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": " 1,199 "
+    },
+    {
+      "id": 6,
+      "image": "https://i.pinimg.com/736x/ea/0d/48/ea0d4857cc3d13de1987c6c1d374cdb3.jpg",
+      "place": "Paradiscus exclusive offer",
+      "duration": "3 nights",
+      "catergory": "Bed and Breakfast",
+      "date": "Checkin date: 21st May 2024",
+      "details": "Return fare all-inclusive",
+      "price": "  1,199 "
+    }
+  ],
+  "card": [
+    {
+      "id": 1,
+      "image": "https://www.atithibhavan.com/images/design_img/about-3.png",
+      "place": "Maldive Holidays",
+
+      "price": "  1,199 "
+    },
+    {
+      "id": 2,
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/548611557.jpg?k=962f747b01ca5e41f39f34b363271def2e1023cb642b80d6064c900285e0ea5e&o=&hp=1",
+      "place": "Rwanda Holidays",
+
+      "price": "  1,199 "
+    },
+    {
+      "id": 3,
+      "image": "https://www.yourparshop.com/cdn/shop/products/golf-4739066_360x.jpg?v=1589918210",
+      "place": "London Holidays",
+      "price": "  1,199 "
+    }
+  ]
+}
