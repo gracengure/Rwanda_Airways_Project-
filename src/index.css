@@ -265,18 +265,6 @@
   overflow: hidden;
  
 }
-.holiday-card::after {
-  content: '';
-  position: absolute;
-  bottom: -30px; /* Adjust the vertical position */
-  right: -40px; /* Adjust the horizontal position */
-  width: 120px; /* Adjust the size of the curve */
-  height: 120px; /* Adjust the size of the curve */
-  background-color: #fff; /* White color for the tail */
-  border-radius: 50%; /* Creates a circular shape */
-  transform: rotate(200deg); /* Rotates the circle to form the curve with the open part facing downward */
-  z-index: 2;
-}
 
 .holiday-card {
   background-color: #fff;
@@ -314,9 +302,9 @@
 .holiday-place {
   font-size: 28px;
   font-weight: 600; /* Make the place text stand out */
-  margin-top: 400px;
+  margin-top: 450px;
   color: #ffffff; /* Ensure the text is visible */
-  margin-left: 5px;
+  margin-left: 2px;
  
 }
 

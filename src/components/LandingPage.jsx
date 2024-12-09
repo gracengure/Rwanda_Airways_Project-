@@ -42,6 +42,20 @@ function LandingPage() {
   const handleMouseEnter = (index) => setHoveredIndex(index); // Set hovered index
   const handleMouseLeave = () => setHoveredIndex(null); // Clear hovered index
 
+  const [position, setPosition] = useState(0);
+  const [pColors, setPColors] = useState([false, false, false]); // Track which <p> tag is blue
+
+  const handleClick = () => {
+    // Update the position and set the color of the corresponding <p> tag to blue
+    setPosition((prevPosition) => (prevPosition + 1) % 3);
+
+    // Reset all <p> tags' color to false, then change the current one to blue
+    setPColors((prevColors) => {
+      const newColors = [false, false, false]; // Reset all colors
+      newColors[(position + 1) % 3] = true; // Set the next <p> tag to blue
+      return newColors;
+    });
+  };
   return (
     <div className="landing-page">
       {/* Navbar */}
@@ -139,29 +153,56 @@ function LandingPage() {
       </div>
       <h1 className="hero-heading">Packages deals to top destinations</h1>
       <div className="flight-card">
-        <div className="flight-links">
-          <p>
+        <div className="flight-links" style={{ position: "relative" }}>
+          <p
+            id="flight-hotel"
+            style={{ color: pColors[0] ? "blue" : "#606060" }} // Set color to blue if true
+          >
             Flights + Hotel
             <IoIosJet style={{ marginLeft: "10px" }} />
             <FaBed style={{ marginLeft: "10px" }} />
           </p>
-          <p>
+          <p
+            id="flight-cars"
+            style={{ color: pColors[1] ? "blue" : "#606060" }} // Set color to blue if true
+          >
             Flights + Cars
             <IoIosJet style={{ marginLeft: "10px" }} />
             <FaCar style={{ marginLeft: "10px" }} />
           </p>
-          <p>
+          <p
+            id="hotels"
+            style={{ color: pColors[2] ? "blue" : "#606060" }} // Set color to blue if true
+          >
             Hotels <FaBed style={{ marginLeft: "10px" }} />
           </p>
+
+          
+          <button
+           onClick={handleClick}
+            style={{
+              width: "350px",
+              backgroundColor: "blue",
+              height: "15px",
+              border: "1px,solid ,white",
+              borderRadius: "10px",
+              position: "absolute",
+              left: `${position * 450}px`, // Adjust button position based on `position` state
+              top: "30px", // Vertical position to place the button just below <p> tags
+              transition: "left 0.3s ease", // Smooth transition
+            }}
+          ></button>
         </div>
         <div
           style={{
             marginTop: "20px",
-            border: "1px ,solid ,#606060",
+            border: "0.5px ,solid ,grey",
             fontWeight: "lighter",
             width: "1400px", // Adjust height as needed
           }}
-        ></div>
+        >
+          {" "}
+        </div>
         <div className="flight-place">
           <div className="rectangle">
             {" "}
@@ -328,13 +369,42 @@ function LandingPage() {
               </select>
             </div>
           </div>
-         
         </div>
-        <button style={{marginTop:'120px' ,marginLeft:"15px",width:"200px" ,height:'50px' ,backgroundColor:'white',fontSize:'20px', color:'#00509E', border:'none', padding:'5px'}}> + Add promo code</button>
+        <button
+          style={{
+            marginTop: "120px",
+            marginLeft: "15px",
+            width: "200px",
+            height: "50px",
+            backgroundColor: "white",
+            fontSize: "20px",
+            color: "#00509E",
+            border: "none",
+            padding: "5px",
+          }}
+        >
+          {" "}
+          + Add promo code
+        </button>
 
-        <button style={{marginTop:'120px' ,float:'right', marginRight:'35px' ,width:"200px" ,height:'50px' ,backgroundColor:'#00509E',fontSize:'15px', color:'white', border:'1px solid white', borderRadius:'5px',padding:'5px'}}>Search Packages</button>
+        <button
+          style={{
+            marginTop: "120px",
+            float: "right",
+            marginRight: "35px",
+            width: "200px",
+            height: "50px",
+            backgroundColor: "#00509E",
+            fontSize: "15px",
+            color: "white",
+            border: "1px solid white",
+            borderRadius: "5px",
+            padding: "5px",
+          }}
+        >
+          Search Packages
+        </button>
       </div>
-     
     </div>
   );
 }
