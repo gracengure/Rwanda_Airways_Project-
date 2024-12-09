@@ -43,14 +43,15 @@
     },
     {
       "id": 5,
-      "image": "./assets/Screenshot from 2024-12-04 21-04-30.jpg",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJTHLD9fvR4PAaT75fqJX5uzEJ8aisOVu2JPk4wQAnBhnV3KQ4",
       "place": "Sheraton exclusive offer",
       "duration": "3 nights",
-      "catergory": "Bed and Breakfast",
+      "category": "Bed and Breakfast",
       "date": "Checkin date: 21st May 2024",
       "details": "Return fare all-inclusive",
-      "price": " 1,199 "
-    },
+      "price": "1,199"
+   },
+   
     {
       "id": 6,
       "image": "https://i.pinimg.com/736x/ea/0d/48/ea0d4857cc3d13de1987c6c1d374cdb3.jpg",
