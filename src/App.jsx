@@ -4,6 +4,7 @@ import Popular from "./components/Popular";
 import Holidays from "./components/Holidays";
 import Cards from "./components/Cards";
 import LandingPage from "./components/LandingPage";
+import Advert from "./components/Advert";
 function App() {
   const [packages, setPackages] = useState([]);
   const[cards ,setCards]=useState([])
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
     <LandingPage/>
+    <Advert/>
     <Holidays cards={cards}/>
       <Popular  packages={packages}/>
       <Cards/>

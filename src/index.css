@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  background-color: rgb(243, 248, 250);
+  background-color: white;
 }
 .package-title {
   font-family: Arial, Helvetica, sans-serif;
@@ -483,6 +483,10 @@ font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100vh;
   position: relative;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navbar styling */
@@ -519,13 +523,134 @@ font-family: Arial, Helvetica, sans-serif;
 .nav-links a {
   color:#606060;
   text-decoration: none;
-  font-size: 25px;
-  font-weight: 550;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;}
+
+  .nav-useful {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    position: absolute; /* Adjust placement as needed */
+    
+    right: 70px;
+  }
+  .nav-useful a {
+    text-decoration: none;
+    color: #606060;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .united-flag{
+    width: 40px;
+  }
   
- 
+.hero-heading {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2; /* Ensures it appears above the background */
+}
+.flight-card{
+  position: absolute;
+  top:75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 250px;
+  width: 1400px;
+  font-family: Arial, Helvetica, sans-serif;
+ z-index: 2; /* Ensures it appears above the background */
+}
+.flight-links {
+  display: flex;
+  gap: 300px;
+  color: #606060;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+.flight-links p{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 1400px;
+
   
+  
+}
+.flight-place{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  height: 86px;
+  width: 1325px;
+  border: 0.5px solid gray;
+  display: flex; /* Use flexbox to create a row */
+  justify-content: space-between; /* Optional: space out the rectangles */
+   /* Optional: gap between the rectangles */
+ z-index: 2; /* Ensures it appears above the background */
+}
+
+.rectangle {
+  flex: 1; /* Make each rectangle take equal space */
+  background-color: white; /* Background color for rectangles */
+  height: 86px; /* Set a height for the rectangles */
+  border: 1px solid #ccc; /* Border for visibility */
+  display: flex;
+ padding-top: 20px;
+ padding-left: 40px;
+  color: #606060;
+}
+.departing,
+.returning ,.cabin .departure ,.traveling{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  margin-bottom: 15px; /* Add spacing between the Departing and Returning blocks */
+}
+
+input[type="date"]  {
+  margin-top: 5px;
+  
+  font-weight: bolder;
+  font-size: 13px;
+  border:none;
 }
 
 
 
+.advert-container {
+ margin-right: 30px;
+ margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+  gap: 20px; /* Adjusts the space between the items */
+}
 
+.advert-item {
+  flex: 1;
+  max-width: 250px; /* Adjust the max width as needed */
+  text-align: center;
+}
+
+.advert-item img {
+ 
+ 
+  margin-bottom: 15px;
+}
