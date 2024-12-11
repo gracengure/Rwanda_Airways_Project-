@@ -10,7 +10,7 @@ function App() {
   const[cards ,setCards]=useState([])
   useEffect(() => {
     // Fetch data from the API endpoint
-    fetch(`${import.meta.env.VITE_API_URL}/card`)
+    fetch(`${import.meta.env.VITE_API_URL}/cards`)
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
