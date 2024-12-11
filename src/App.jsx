@@ -6,30 +6,31 @@ import Cards from "./components/Cards";
 import LandingPage from "./components/LandingPage";
 import Advert from "./components/Advert";
 function App() {
-  const [packages, setPackages] = useState([]);
+  
   const[cards ,setCards]=useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/package")
-      .then((response) => response.json())
-      .then((data) => {
-        setPackages(data);
-      })
-      .catch((error) => console.error('Error loading packages:', error));
+    // Fetch data from the API endpoint
+    fetch(`${import.meta.env.VITE_API_URL}/card`)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => setCards(data))
+  .catch((error) => console.error("Error fetching data:", error));
+
+   
   }, []);
-  useEffect(() => {
-    fetch("http://localhost:3000/card")
-      .then((response) => response.json())
-      .then((data) => {
-        setCards(data);
-      })
-      .catch((error) => console.error('Error loading Cards:', error));
-  }, []);
+
+
+  
   return (
     <>
     <LandingPage/>
     <Advert/>
     <Holidays cards={cards}/>
-      <Popular  packages={packages}/>
+      <Popular  />
       <Cards/>
       <Footer />
     </>

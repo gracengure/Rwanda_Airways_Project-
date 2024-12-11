@@ -1,8 +1,24 @@
+import React, { useEffect, useState } from "react";
 import { PiMoonStarsFill } from "react-icons/pi";
 import { BsCalendarCheckFill } from "react-icons/bs";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { FaBed } from "react-icons/fa6";
-function Popular({ packages }) {
+function Popular() {
+  const [packages, setPackages] = useState([]);
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_API_URL}/package`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setPackages(data);
+      })
+      .catch((error) => console.error("Error loading cards:", error));
+  }, []);
+
   if (!packages || packages.length === 0) {
     return <div>Loading ...</div>;
   }
